@@ -10,6 +10,7 @@ Currently, two official plugins are available:
 
 
 This Project is a Password Generator. Using this, you can choose randomly generated passwords with or without numbers or special characters and finally you can copy them to your clipboard as well!!
+This project gives a great insight on the usage of React Hooks such as useCallback, useEffect, useState.
 
 
 Use it securely👀👀
