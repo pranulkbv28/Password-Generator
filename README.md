@@ -15,7 +15,7 @@ This is shown by highlighting the password and also there is also a small popup 
 
 This Project is also done with the collaboration of TailwindCSS.
 
-This project gives a great insight on the usage of React Hooks such as useCallback, useEffect, useState.
+This project gives a great insight on the usage of React Hooks such as useCallback, useEffect, useState and useRef.
 
 
 Use it securely👀👀
