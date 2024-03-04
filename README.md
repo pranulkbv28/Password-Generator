@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 
 This Project is a Password Generator. Using this, you can choose randomly generated passwords with or without numbers or special characters and finally you can copy them to your clipboard as well!!
 
-There is also a small popup which indicates that your password has been copied.
+This is shown by highlighting the password and also there is also a small popup which indicates that your password has been copied.
 
 This Project is also done with the collaboration of TailwindCSS.
 

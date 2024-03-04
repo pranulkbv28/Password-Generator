@@ -11,6 +11,7 @@ function Genarator({
   password,
   copyPassword,
   btnText,
+  copiedPassword
 }) {
   return (
     <div className="w-3/5 mx-auto border-none p-4 rounded-lg bg-gray-800">
@@ -21,6 +22,7 @@ function Genarator({
           value={password}
           readOnly
           placeholder="Password"
+          ref={copiedPassword}
         />
         <button
           onClick={copyPassword}

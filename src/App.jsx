@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
 import "./App.css";
 import Genarator from "./components/Genarator";
 
@@ -10,7 +10,7 @@ function App() {
   let [password, setPassword] = useState("");
   let [btnText, setBtnText] = useState("Copy");
   let [copyClass, setCopyClass] = useState("hidden")
-  // const btn = useRef(null);
+  const copiedPassword = useRef(null);
 
   const passwordGenerator = useCallback(() => {
     let pass = "";
@@ -26,6 +26,7 @@ function App() {
   }, [length, isNumber, isSpecialChar, setPassword]);
 
   const copyPassword = () => {
+    copiedPassword.current?.select();
     window.navigator.clipboard.writeText(password);
     setBtnText("Copied!");
     setCopyClass("absolute bottom-1/4 right-2/4 bg-white text-black p-4")
@@ -57,6 +58,7 @@ function App() {
           setIsSpecialChar={setIsSpecialChar}
           password={password}
           copyPassword={copyPassword}
+          copiedPassword={copiedPassword}
           btnText={btnText}
         />
       </div>
