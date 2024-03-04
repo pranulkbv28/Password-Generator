@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+}
+
+.kode-mono-500 {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.slackside-one-regular {
+  font-family: "Slackside One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
