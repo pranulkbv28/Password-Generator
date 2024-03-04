@@ -9,6 +9,7 @@ function App() {
   let [isSpecialChar, setIsSpecialChar] = useState(false);
   let [password, setPassword] = useState("");
   let [btnText, setBtnText] = useState("Copy");
+  let [copyClass, setCopyClass] = useState("hidden")
   // const btn = useRef(null);
 
   const passwordGenerator = useCallback(() => {
@@ -27,8 +28,10 @@ function App() {
   const copyPassword = () => {
     window.navigator.clipboard.writeText(password);
     setBtnText("Copied!");
+    setCopyClass("absolute bottom-1/4 right-2/4 bg-white text-black p-4")
     setTimeout(() => {
       setBtnText("Copy");
+      setCopyClass("hidden")
     }, 2000);
   };
 
@@ -38,6 +41,9 @@ function App() {
 
   return (
     <div className="bg-black text-white w-full h-screen pt-8">
+      <div className={copyClass}>
+        Copied!
+      </div>
       <h1 className="kode-mono-500 text-center text-4xl h-auto">
         Password Generator
       </h1>
